@@ -101,7 +101,7 @@ export function Footer() {
             © 2025 Ajay Jaykar. All rights reserved.
           </p>
           <p className="flex items-center gap-1 text-sm text-muted-foreground">
-            Made with <Heart className="h-3.5 w-3.5 fill-primary text-primary" /> by Ajay
+            Made with <Heart className="h-3.5 w-3.5 fill-primary text-primary" /> by Jaykron
           </p>
         </div>
       </div>

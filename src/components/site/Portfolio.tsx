@@ -1,49 +1,55 @@
 import { useState } from "react";
-import agency from "@/assets/project-agency.jpg";
-import blog from "@/assets/project-blog.jpg";
-import finace from "@/assets/project-finace.jpg";
-import furniro from "@/assets/project-furniro.jpg";
-import portfolio from "@/assets/project-portfolio.jpg";
-import taskflow from "@/assets/project-taskflow.jpg";
+import Arden from "@/assets/arden2.png";
+import blog from "@/assets/blog.jpg";
+import Fitness from "@/assets/apex_fitness.png";
+import Astik from "@/assets/astik_mane_2.png";
+import biztrox from "@/assets/biztrox.png";
+import TrueEye from "@/assets/true_eye_2.png";
 
 const filters = ["All", "Business", "E-commerce", "Landing Pages", "Web Apps"];
 
 const projects = [
   {
-    title: "Finace - Business Website",
-    image: finace,
-    tags: ["Business", "Landing Page"],
-    filters: ["Business", "Landing Pages"],
+    title: "Apex Fitness - Fitness Website",
+    image: Fitness,
+    tags: ["Business", "Blog"],
+    filters: ["Business", "Web Apps"],
+    link: "https://ajayjkr67.github.io/fitness/",
   },
   {
-    title: "Furniro - E-commerce Store",
-    image: furniro,
-    tags: ["E-commerce", "Web Design"],
-    filters: ["E-commerce"],
-  },
-  {
-    title: "Taskflow - Project Management App",
-    image: taskflow,
-    tags: ["Web App", "Dashboard"],
-    filters: ["Web Apps"],
-  },
-  {
-    title: "Creative Agency Website",
-    image: agency,
-    tags: ["Landing Page"],
+    title: "Astik Mane - Clinic Website",
+    image: Astik,
+    tags: ["Landing Page", "Blog"],
     filters: ["Landing Pages"],
+    link: "https://www.astikpsychiatrist.com/",
   },
   {
-    title: "Portfolio Website",
-    image: portfolio,
+    title: "Arden E-Com Website",
+    image: Arden,
+    tags: ["Business", "Blog"],
+    filters: ["Business", "E-commerce", "Web Apps"],
+    link: "https://ajayjkr67.github.io/arden/",
+  },
+  {
+    title: "True Eye - Clinic Website",
+    image: TrueEye,
+    tags: ["Landing Pages"],
+    filters: ["Landing Pages"],
+    link: "https://ajayjkr67.github.io/clinic_test/",
+  },
+  {
+    title: "Biztrox - Business",
+    image: biztrox,
     tags: ["Personal"],
-    filters: ["Landing Pages"],
+    filters: ["Business", "Web Apps"],
+    link: "https://ajayjkr67.github.io/biztrox/",
   },
   {
     title: "Blog Website",
     image: blog,
     tags: ["Blog"],
     filters: ["Web Apps"],
+    link: "https://example.com",
   },
 ];
 
@@ -80,9 +86,12 @@ export function Portfolio() {
         </div>
         <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {visible.map((p) => (
-            <article
+            <a
               key={p.title}
-              className="overflow-hidden rounded-lg border border-border bg-card"
+              href={p.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block overflow-hidden rounded-lg border border-border bg-card transition-transform hover:-translate-y-1"
             >
               <img
                 src={p.image}
@@ -90,7 +99,7 @@ export function Portfolio() {
                 loading="lazy"
                 width={960}
                 height={640}
-                className="aspect-[3/2] w-full object-cover"
+                className="w-full object-cover"
               />
               <div className="p-5">
                 <h3 className="text-base font-semibold text-foreground">{p.title}</h3>
@@ -105,7 +114,7 @@ export function Portfolio() {
                   ))}
                 </div>
               </div>
-            </article>
+            </a>
           ))}
         </div>
         <div className="mt-12 text-center">
