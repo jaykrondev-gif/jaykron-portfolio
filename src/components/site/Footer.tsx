@@ -23,7 +23,7 @@ export function Footer() {
             </p>
           </div>
           <a
-            href="mailto:hello@ajayjaykar.com"
+            href="mailto:jaykron.dev@gmail.com"
             className="rounded-md bg-primary px-6 py-3.5 text-sm font-semibold tracking-[0.1em] text-primary-foreground transition-colors hover:bg-primary/90"
           >
             LET'S TALK ↗
@@ -84,7 +84,7 @@ export function Footer() {
             </p>
             <ul className="mt-5 space-y-3 text-sm text-muted-foreground">
               <li className="flex items-center gap-2">
-                <Mail className="h-4 w-4 text-primary" /> hello@ajayjaykar.com
+                <Mail className="h-4 w-4 text-primary" /> jaykron.dev@gmail.com
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4 text-primary" /> +91 89767 47475
