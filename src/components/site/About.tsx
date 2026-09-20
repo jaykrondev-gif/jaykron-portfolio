@@ -1,8 +1,8 @@
 import { Briefcase, Folder, Zap, Star } from "lucide-react";
 
 const stats = [
-  { icon: Briefcase, value: "4+", label: "Years Experience" },
-  { icon: Folder, value: "20+", label: "Projects Completed" },
+  { icon: Briefcase, value: "3+", label: "Years Experience" },
+  { icon: Folder, value: "10+", label: "Projects Completed" },
   { icon: Zap, value: "<12h", label: "Response Time" },
   { icon: Star, value: "100%", label: "Client Satisfaction" },
 ];

@@ -66,7 +66,7 @@ export function Portfolio() {
             PORTFOLIO
           </p>
           <h2 className="mt-4 text-3xl font-semibold text-foreground sm:text-4xl">
-            Some of my <span className="text-primary">recent work</span>
+            My <span className="text-primary">Showcase</span>
           </h2>
         </div>
         <div className="mt-10 flex flex-wrap justify-center gap-2">
@@ -122,7 +122,7 @@ export function Portfolio() {
             href="#work"
             className="inline-block rounded-md border border-primary/60 px-6 py-3.5 text-sm font-semibold tracking-[0.1em] text-foreground transition-colors hover:bg-primary/15"
           >
-            VIEW ALL PROJECTS
+            VIEW FULL SHOWCASE
           </a>
         </div>
       </div>

@@ -7,6 +7,7 @@ import { Portfolio } from "@/components/site/Portfolio";
 import { Process } from "@/components/site/Process";
 import { Skills } from "@/components/site/Skills";
 import { Testimonials } from "@/components/site/Testimonials";
+import { WorkWithConfidence } from "@/components/site/WorkWithConfidence";
 
 const title = "Ajay Jaykar — Website Developer";
 const description =
@@ -36,7 +37,8 @@ function Index() {
         <Skills />
         <Portfolio />
         <Process />
-        <Testimonials />
+        {/* <Testimonials /> */}
+        <WorkWithConfidence />
       </main>
       <Footer />
     </div>

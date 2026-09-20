@@ -13,9 +13,9 @@ export function Nav() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-border/40 bg-background/90 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-5 sm:px-6">
-       <a href="#home" className="relative inline-block text-4xl font-black tracking-wider text-foreground">
-  JK<span className="text-violet-500 text-6xl leading-[0] inline-block align-baseline">.</span>
-</a>
+        <a href="#home" className="relative inline-block text-4xl font-black tracking-wider text-foreground">
+          JK<span className="text-violet-500 text-6xl leading-[0] inline-block align-baseline">.</span>
+        </a>
         <nav className="hidden items-center gap-7 md:flex">
           {links.map((l) => (
             <a
