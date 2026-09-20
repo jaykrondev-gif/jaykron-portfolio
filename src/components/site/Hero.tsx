@@ -1,4 +1,4 @@
-import { Mouse } from "lucide-react";
+import { Mouse, ChevronRight } from "lucide-react";
 import heroPortrait from "@/assets/hero-ajay.png";
 
 export function Hero() {
@@ -26,9 +26,9 @@ export function Hero() {
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <a
               href="#work"
-              className="rounded-md bg-primary px-6 py-3.5 text-sm font-semibold tracking-[0.1em] text-primary-foreground transition-colors hover:bg-primary/90"
+              className="inline-flex items-center gap-1 rounded-md bg-primary px-6 py-3.5 text-sm font-semibold tracking-[0.1em] text-primary-foreground transition-colors hover:bg-primary/90"
             >
-              VIEW MY WORK ↗
+              VIEW MY WORK <ChevronRight className="h-4 w-4" />
             </a>
             <a
               href="#contact"
